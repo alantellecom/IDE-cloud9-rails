@@ -22,6 +22,11 @@ spec:
           image: alanlab/cloud9-ruby265-rails523
           ports:
           - containerPort: 8000
+          env:
+          - name: PUID
+            value: 1000
+          - name: PGID
+            value: 1000
           envFrom:
           - secretRef: 
               name: auth
