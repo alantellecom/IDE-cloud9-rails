@@ -24,7 +24,7 @@ spec:
           - containerPort: 8000
           envFrom:
           - secretRef: 
-            name: auth
+              name: auth
           volumeMounts:
           - mountPath: /code
             name: data
