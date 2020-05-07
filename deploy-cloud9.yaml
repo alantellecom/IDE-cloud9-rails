@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: cloud9
-          image: linuxserver/cloud9
+          image: alanlab/cloud9-ruby265-rails523
           ports:
           - containerPort: 8000
           envFrom:
