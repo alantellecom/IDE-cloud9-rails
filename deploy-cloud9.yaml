@@ -24,9 +24,9 @@ spec:
           - containerPort: 8000
           env:
           - name: PUID
-            value: 1000
+            value: "1000"
           - name: PGID
-            value: 1000
+            value: "1000"
           envFrom:
           - secretRef: 
               name: auth
