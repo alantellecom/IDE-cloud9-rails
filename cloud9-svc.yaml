@@ -5,11 +5,13 @@ metadata:
   name: cloud9-svc
 spec:
   ports:
-  - port: 8000
+  - name: cloud9app
+    port: 8000
     protocol: TCP
     targetPort: 8000
     nodePort: 31234
-  - port: 3000
+  - name: railsapp
+    port: 3000
     protocol: TCP
     targetPort: 3000
     nodePort: 31235
