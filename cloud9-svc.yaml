@@ -9,6 +9,10 @@ spec:
     protocol: TCP
     targetPort: 8000
     nodePort: 31234
+  - port: 3000
+    protocol: TCP
+    targetPort: 3000
+    nodePort: 31235
   selector:
     run: webapp
   type: NodePort
