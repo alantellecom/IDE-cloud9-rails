@@ -3,18 +3,19 @@ kind: Service
 metadata:
   creationTimestamp: null
   name: cloud9-svc
+  namespace: aluno1
 spec:
   ports:
   - name: cloud9app
     port: 8000
     protocol: TCP
     targetPort: 8000
-    nodePort: 31234
+    nodePort: 30011
   - name: railsapp
     port: 3000
     protocol: TCP
     targetPort: 3000
-    nodePort: 31235
+    nodePort: 30012
   selector:
     run: webapp
   type: NodePort
