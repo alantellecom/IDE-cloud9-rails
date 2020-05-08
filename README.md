@@ -18,4 +18,6 @@ docker create \
   
   create secret with USERNAME and PASSWORD for secretRef:
   
+  kubectl create ns alunox
+  
   kubectl create secret generic auth --from-literal USERNAME=alunox --from-literal PASSWORD=xxxxxx --namespace alunox
