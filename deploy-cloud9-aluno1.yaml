@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cloud9
+  namespace: aluno1
 spec:
   replicas: 1
   strategy:
@@ -19,7 +20,7 @@ spec:
     spec:
       containers:
         - name: cloud9
-          image: alanlab/cloud9-ruby265-rails523
+          image: alanlab/cloud9-ruby265-rails523:v2
           ports:
           - containerPort: 8000
           envFrom:
@@ -31,5 +32,5 @@ spec:
       volumes:
       - name: data
         hostPath:
-          path: /tmp
-          type: Directory    
+          path: /tmp/aluno1
+          type: DirectoryOrCreate   
