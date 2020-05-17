@@ -16,8 +16,11 @@ docker create \
   linuxserver/cloud9
   
   
-  create secret with USERNAME and PASSWORD for secretRef:
+   
+  Using kubernetes, create secret with USERNAME and PASSWORD for secretRef:
   
-  kubectl create ns alunox
+  kubectl create ns room01
   
-  kubectl create secret generic auth --from-literal USERNAME=alunox --from-literal PASSWORD=xxxxxx --namespace alunox
+  +
+  
+  kubectl create secret generic auth --from-literal USERNAME=xxx --from-literal PASSWORD=xxxxxx --namespace room01
