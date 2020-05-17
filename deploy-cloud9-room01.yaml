@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cloud9
-  namespace: aluno1
+  namespace: room01
 spec:
   replicas: 1
   strategy:
