@@ -9,7 +9,8 @@ docker create \
   -e GITURL=https://github.com/linuxserver/docker-cloud9.git `#optional` \
   -e USERNAME= `#optional` \
   -e PASSWORD= `#optional` \
-  -p 8000:8000 \
+  -p 8000:8000 #for cloud9 service \
+  -p 3000:3000 #for rails app \
   -v /path/to/your/code:/code `#optional` \
   -v /var/run/docker.sock:/var/run/docker.sock `#optional` \
   --restart unless-stopped \
