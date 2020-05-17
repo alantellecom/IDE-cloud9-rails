@@ -3,7 +3,7 @@ kind: Service
 metadata:
   creationTimestamp: null
   name: cloud9-svc
-  namespace: aluno1
+  namespace: room01
 spec:
   ports:
   - name: cloud9app
